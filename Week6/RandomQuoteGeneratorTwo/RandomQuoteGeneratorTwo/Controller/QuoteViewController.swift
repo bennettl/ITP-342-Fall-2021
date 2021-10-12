@@ -27,6 +27,8 @@ class QuoteViewController: UIViewController {
         updateQuote()
         
         
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        
         // Example of optional chaning
         // authorLabel?.text?.uppercased()
         

@@ -17,6 +17,8 @@
 		53D943EC27054C0D008D03D4 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D943EB27054C0D008D03D4 /* QuoteViewController.swift */; };
 		53D943EE27054D37008D03D4 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D943ED27054D37008D03D4 /* Quote.swift */; };
 		53D943F027054D9A008D03D4 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D943EF27054D9A008D03D4 /* QuoteService.swift */; };
+		53FAED3727151C4C00F8A08F /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FAED3627151C4C00F8A08F /* QuotesViewController.swift */; };
+		53FAED3927152AA800F8A08F /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FAED3827152AA800F8A08F /* AddQuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		53D943EB27054C0D008D03D4 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		53D943ED27054D37008D03D4 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		53D943EF27054D9A008D03D4 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		53FAED3627151C4C00F8A08F /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		53FAED3827152AA800F8A08F /* AddQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				53D943EB27054C0D008D03D4 /* QuoteViewController.swift */,
+				53FAED3627151C4C00F8A08F /* QuotesViewController.swift */,
+				53FAED3827152AA800F8A08F /* AddQuoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FAED3927152AA800F8A08F /* AddQuoteViewController.swift in Sources */,
 				53D943EE27054D37008D03D4 /* Quote.swift in Sources */,
+				53FAED3727151C4C00F8A08F /* QuotesViewController.swift in Sources */,
 				53D943EC27054C0D008D03D4 /* QuoteViewController.swift in Sources */,
 				53D943F027054D9A008D03D4 /* QuoteService.swift in Sources */,
 				53D943B827054AA9008D03D4 /* AppDelegate.swift in Sources */,

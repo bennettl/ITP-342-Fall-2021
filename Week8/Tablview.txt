@@ -1,0 +1,49 @@
+
+
+
+
+
+
+Cells that are no longer visible are put into a "reuse pool ♻️" , when tableview needs a new cell, tableview is going to query / ask the reuse pool for available cells.
+	- Yes 👍 , reuse them!
+	- No, tableview will create it  
+	
+
+
+class UITableView: -{
+
+	var datasource: UITableViewDataSource?
+
+}
+
+A
+-------------------------
+|	IndexPath					|
+|	(section: 0, row: 0)	| <--- UITableView
+|								   |
+|								<-----	UITableViewCell
+-------------------------
+|									|
+|	IndexPath					|
+|	(section: 0, row: 1)	|
+|									|
+------------------------
+|									|
+|	IndexPath					|
+|	(section: 0, row: 2)	|
+|									|
+------------------------
+
+B
+-------------------------
+|	IndexPath					|
+|	(section: 1, row: 0)	|
+|									|
+|									|
+------------------------
+|	IndexPath					|
+|	(section: 1, row: 1)	|
+|									|
+|									|
+------------------------
+
