@@ -127,16 +127,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SxJ-CX-OlL">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="g7H-FF-90l">
+                            <connections>
+                                <action selector="editButtonDidTapped:" destination="q0h-5z-6BI" id="bt2-xn-55R"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uGV-oI-pGW">
                             <connections>
-                                <segue destination="ha7-jo-EYS" kind="show" id="izY-l5-9JD"/>
+                                <segue destination="ha7-jo-EYS" kind="show" id="bey-sc-Y1S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="L7c-ag-YRS" id="wBX-Z6-D3D"/>
+                        <segue destination="ha7-jo-EYS" kind="show" identifier="EditSegue" id="srl-5f-NkS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTJ-5G-c1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747.826086956522" y="-58.258928571428569"/>
+            <point key="canvasLocation" x="1694" y="-58"/>
         </scene>
         <!--Add Quote View Controller-->
         <scene sceneID="HHE-jA-yWt">
@@ -151,12 +160,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ha7-jo-EYS" id="8kz-eG-Ny2"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvx-t6-LaV">
                                 <rect key="frame" x="61" y="287" width="300" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ha7-jo-EYS" id="TY4-bY-pr7"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-1G-fTc">
                                 <rect key="frame" x="109" y="380" width="204" height="83"/>
@@ -175,12 +190,13 @@
                     <navigationItem key="navigationItem" id="9dk-3K-t2m"/>
                     <connections>
                         <outlet property="authorTextField" destination="fvx-t6-LaV" id="AqF-Ve-iwE"/>
+                        <outlet property="createButton" destination="ZNB-1G-fTc" id="cjl-8o-ZVB"/>
                         <outlet property="messageTextField" destination="nCp-Wg-5gk" id="fm3-d1-RhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4k-2i-EDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2576.811594202899" y="-58.258928571428569"/>
+            <point key="canvasLocation" x="2481" y="-58"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ve0-WP-rPD">
@@ -201,6 +217,9 @@
             <point key="canvasLocation" x="874" y="-58"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bey-sc-Y1S"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
