@@ -8,9 +8,10 @@
 import Foundation
 
 // Data Representation
-struct Quote {
+struct Quote: Codable {
     let message: String
     
     let author: String
+    
 }
 

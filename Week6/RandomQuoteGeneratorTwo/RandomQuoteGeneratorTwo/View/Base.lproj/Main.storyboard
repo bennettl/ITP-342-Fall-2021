@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ld1-wG-1LP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mp9-o7-gJt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -55,6 +55,7 @@
                         <viewLayoutGuide key="safeArea" id="tIc-Ya-whz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="nuL-Fe-tJ5"/>
                     <connections>
                         <outlet property="authorLabel" destination="fw3-j2-0XZ" id="cIJ-l5-d3I"/>
                         <outlet property="messageLabel" destination="yTi-n4-yqu" id="Ym3-l1-3YE"/>
@@ -72,7 +73,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-145" y="-38"/>
+            <point key="canvasLocation" x="-146" y="-25"/>
         </scene>
         <!--Quotes View Controller-->
         <scene sceneID="L2I-r4-JOB">
@@ -83,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-ag-YRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainCell" textLabel="VN2-ig-5fg" detailTextLabel="QHZ-re-e1l" style="IBUITableViewCellStyleSubtitle" id="OG9-Eu-S1v">
@@ -145,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTJ-5G-c1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="-58"/>
+            <point key="canvasLocation" x="672" y="653"/>
         </scene>
         <!--Add Quote View Controller-->
         <scene sceneID="HHE-jA-yWt">
@@ -196,12 +197,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4k-2i-EDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="-58"/>
+            <point key="canvasLocation" x="1459" y="653"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ve0-WP-rPD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ld1-wG-1LP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="E4l-It-qde"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ak-3j-XU7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -214,7 +216,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hoy-SZ-Scs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-58"/>
+            <point key="canvasLocation" x="-146" y="653"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vN5-k2-mr9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mp9-o7-gJt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="riQ-g1-Z02">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yu0-ZV-qUm" kind="relationship" relationship="viewControllers" id="yCg-tD-4pj"/>
+                        <segue destination="Ld1-wG-1LP" kind="relationship" relationship="viewControllers" id="BaF-20-brq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usx-1d-deW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1251" y="228"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

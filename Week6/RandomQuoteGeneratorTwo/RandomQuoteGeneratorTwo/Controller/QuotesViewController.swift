@@ -95,8 +95,10 @@ class QuotesViewController: UIViewController, UITableViewDataSource, UITableView
         if let addQuoteVc = segue.destination as? AddQuoteViewController{
             
             addQuoteVc.onComplete = { quote in
+                // Refresh the list
                 self.tableview.reloadData()
                 self.navigationController?.popViewController(animated: true)
+                
             }
             
             // If we have time, will finish editing
