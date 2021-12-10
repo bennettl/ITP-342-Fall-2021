@@ -1,0 +1,128 @@
+11/3/21
+============================================================
+
+
+Semantic version -> 7.0.0
+
+Major (Break changes , major updates). Minor (new updates , NON BREAKING) . Patch (bug fixes)
+
+
+
+
+CocoaPods = depdenecy manager that brings 3rd party libraries to your app
+
+CocoaTouch === Foundation + UIKit
+
+Cocoa === Foundation + AppKit
+
+
+
+
+Client App	---API (SOAP / REST / GraphQL / RPC) --> Sever App
+Client Machine ----HTTP (Network Protocol)------> Server Machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================
+11/1/21
+
+
+
+
+
+
+Frontend
+	- Client side applications
+		- iOS / Android / Oculus AR / VR
+	
+	- Backend
+		- NodeJS, Java, C#
+
+
+HTTP - Client / Server Model
+
+RESTful APIs follow a specific standard and convention
+
+--------------
+iOS (Client) | <--- HTTP ---> API Service (Server)
+-------------		
+
+
+Facebook
+
+- resources (nouns)
+	- users
+	- ads
+	- posts
+	- newsfeed
+	- photos
+
+- verbs (actions)
+	- create --> POST
+	- read --> GET
+	- update -> PUT
+	- delete -> DELETE
+
+- endpoints
+	- Create a user
+		- POST /users
+	- Update a user
+		- PUT /users/:id
+	- Delete a user
+		- DELETE /users/:id
+	- Read a user profile
+		- GET /users/:id
+
+
+
+
+
+
+
+
+		
+
+
+
+
+Database
+	- records
+
+- SQL
+	- tables, columns, rows
+	- users
+		- row #1 
+		- row #2
+
+- NoSQL
+	- documents (JSON)
+	{
+		"firstName" :"",
+		"lastName": ""
+	}
+
+APIs - contract / specification for a software / component
+
+- Native APIs
+	- Arrays, Dictionaries, defined through protocols and method signatures
+
+- Web APIs
+	- Through HTTP network (HyperText Transfer Protocol)
+	- Facebook, Instagram, Google Maps
